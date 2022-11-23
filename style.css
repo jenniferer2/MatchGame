@@ -1,0 +1,49 @@
+h1 {
+    text-align:center;
+}
+h2 {
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align:center;
+}
+#chassis {
+    border:1px solid black;
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 300px;
+
+
+}
+h3 {
+    padding-top: 40px;
+    text-align:center;
+    font-size: 30px;
+}
+
+.imgs {
+    margin-left:500px;
+    margin-right:300px;
+    padding-top: 80px;
+}
+#r1 {
+    padding: 5px;
+    width: 203px;
+}
+#r2 {
+    padding: 5px;
+    width: 187px;
+}
+#r3 {
+    padding: 5px;
+    width: 172px;
+}
+#r4 {
+    padding: 5px;
+    width: 134px;
+}
+#r5 {
+    padding: 5px;
+    width: 136px;
+}
