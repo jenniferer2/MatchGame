@@ -19,6 +19,7 @@
 
             padding-top: 10px;
         }
+
         h3 {
             text-align: center;
 
@@ -34,7 +35,7 @@
             display: inline-block;
         }
 
-        /* Clear floats after image containers */
+
         .row::after {
             content: "";
             clear: both;
@@ -167,19 +168,19 @@
             text-transform: uppercase;
             padding: .2em .2em;
         }
-      
+
         #f {
             font-weight: bold;
-        text-align: center;
+            text-align: center;
             background-color: #2f9c62;
             color: white;
             text-transform: uppercase;
             padding: 1em 1em;
         }
+
         #control {
             text-align: center;
         }
-
     </style>
 
     <script>
@@ -199,146 +200,142 @@
             document.getElementById("box").src = "r5.png"
 
         }
-    var pL = 0;
-var tS = 0;
-var sI= 0;
-var s = false;
-var d = false; 
-var pT = false;
-var pTT = 0;
+        var pL = 0;
+        var tS = 0;
+        var sI = 0;
+        var s = false;
+        var d = false;
+        var pT = false;
+        var pTT = 0;
 
-function addH() {
-    pT = true;
-    pTT = 1;
-    document.getElementById("pT").innerHTML = "Power Type: Hydro";
-    
-}
-function addN() {
-    pT = true;
-    pTT = 2;
-    document.getElementById("pT").innerHTML = "Power Type: Nuclear";
+        function addH() {
+            pT = true;
+            pTT = 1;
+            document.getElementById("pT").innerHTML = "Power Type: Hydro";
 
-
-}
-function addS() {
-    pT = true; 
-    pTT = 3;
-    document.getElementById("pT").innerHTML = "Power Type: Solar";
-   
-
-}  
-function finalize() {
-    document.getElementById('one').style.display = 'none';
-    document.getElementById('two').style.display = 'none';
-    document.getElementById('three').style.display = 'none';
-    document.getElementById('four').style.display = 'none';
-    document.getElementById('five').style.display = 'none';
-    document.getElementById('one').style.display = 'none';
-    document.getElementById('t3').style.display = 'none';
-    document.getElementById('p1').style.display = 'none';
-    document.getElementById('p2').style.display = 'none';
-    document.getElementById('t1').style.display = 'none';
-    document.getElementById('t2').style.display = 'none';
-    document.getElementById('s1').style.display = 'none';
-    document.getElementById("s2").style.display = 'none';
-    document.getElementById("myBtn").style.display = 'none';
-    document.getElementById("b").style.display = 'none';
-    document.getElementById("h").style.display = 'none';
-    document.getElementById("n").style.display = 'none';
-    document.getElementById("ss").style.display = 'none';
+        }
+        function addN() {
+            pT = true;
+            pTT = 2;
+            document.getElementById("pT").innerHTML = "Power Type: Nuclear";
 
 
-}
+        }
+        function addS() {
+            pT = true;
+            pTT = 3;
+            document.getElementById("pT").innerHTML = "Power Type: Solar";
 
 
-function tgl()
-{
-
-        var t = document.getElementById("myBtn");
-if(t.value=="ON"){
-      t.value="OFF";
-      s = false;
-      document.getElementById("s").innerHTML = "Scanners: OFF"
-
-    }
-else if(t.value=="OFF")
-{
-      t.value="ON";
-      s= true;
-      document.getElementById("s").innerHTML = "Scanners: ON";
-    
-    }
-    
-}
-function tgl2()
-{
-
-   
-        var t = document.getElementById("b");
-if(t.value=="ON"){
-      t.value="OFF";
-    d = false;
-    document.getElementById("d").innerHTML = "Defense Systems: OFF"
-}
-else if(t.value=="OFF")
-{
-      t.value="ON";
-      d = true;
-      document.getElementById("d").innerHTML = "Defense Systems: ON"
-    }
-    
-
-}
-function plusPl() {
-        pL = pL + 1; 
-document.getElementById("pL").innerHTML = "Power Level: " + pL;  
-    
-}
-function subPl() {
+        }
+        function finalize() {
+            document.getElementById('one').style.display = 'none';
+            document.getElementById('two').style.display = 'none';
+            document.getElementById('three').style.display = 'none';
+            document.getElementById('four').style.display = 'none';
+            document.getElementById('five').style.display = 'none';
+            document.getElementById('one').style.display = 'none';
+            document.getElementById('t3').style.display = 'none';
+            document.getElementById('p1').style.display = 'none';
+            document.getElementById('p2').style.display = 'none';
+            document.getElementById('t1').style.display = 'none';
+            document.getElementById('t2').style.display = 'none';
+            document.getElementById('s1').style.display = 'none';
+            document.getElementById("s2").style.display = 'none';
+            document.getElementById("myBtn").style.display = 'none';
+            document.getElementById("b").style.display = 'none';
+            document.getElementById("h").style.display = 'none';
+            document.getElementById("n").style.display = 'none';
+            document.getElementById("ss").style.display = 'none';
 
 
-pL = pL - 1; 
-if (pL < 0) {
-    pL = 0;
-}
-document.getElementById("pL").innerHTML = "Power Level: " + pL;  
-
-}
-function plustS() {
+        }
 
 
-tS = tS + 1; 
-document.getElementById("tS").innerHTML = "Top Speed: " + tS;  
+        function tgl() {
 
-}
-function subtS() {
+            var t = document.getElementById("myBtn");
+            if (t.value == "ON") {
+                t.value = "OFF";
+                s = false;
+                document.getElementById("s").innerHTML = "Scanners: OFF"
+
+            }
+            else if (t.value == "OFF") {
+                t.value = "ON";
+                s = true;
+                document.getElementById("s").innerHTML = "Scanners: ON";
+
+            }
+
+        }
+        function tgl2() {
 
 
-        tS = tS - 1; 
-if (tS < 0) {
-    tS = 0;
-}
-document.getElementById("tS").innerHTML = "Top Speed: " + tS;
-}
-  
-function plusSi() {
+            var t = document.getElementById("b");
+            if (t.value == "ON") {
+                t.value = "OFF";
+                d = false;
+                document.getElementById("d").innerHTML = "Defense Systems: OFF"
+            }
+            else if (t.value == "OFF") {
+                t.value = "ON";
+                d = true;
+                document.getElementById("d").innerHTML = "Defense Systems: ON"
+            }
 
-    sI = sI + 1; 
-    document.getElementById("sI").innerHTML = "Structural Integrity: " + sI;  
-    
-}
-function subSi() {
-   
- 
-    sI = sI - 1; 
-    if (sI < 0) {
-        sI = 0;
-    }
-    document.getElementById("sI").innerHTML = "Structural Integrity: " + sI;
 
-}
+        }
+        function plusPl() {
+            pL = pL + 1;
+            document.getElementById("pL").innerHTML = "Power Level: " + pL;
 
-  
+        }
+        function subPl() {
+
+
+            pL = pL - 1;
+            if (pL < 0) {
+                pL = 0;
+            }
+            document.getElementById("pL").innerHTML = "Power Level: " + pL;
+
+        }
+        function plustS() {
+
+
+            tS = tS + 1;
+            document.getElementById("tS").innerHTML = "Top Speed: " + tS;
+
+        }
+        function subtS() {
+
+
+            tS = tS - 1;
+            if (tS < 0) {
+                tS = 0;
+            }
+            document.getElementById("tS").innerHTML = "Top Speed: " + tS;
+        }
+
+        function plusSi() {
+
+            sI = sI + 1;
+            document.getElementById("sI").innerHTML = "Structural Integrity: " + sI;
+
+        }
+        function subSi() {
+
+
+            sI = sI - 1;
+            if (sI < 0) {
+                sI = 0;
+            }
+            document.getElementById("sI").innerHTML = "Structural Integrity: " + sI;
+
+        }
+
+
 
 
 
@@ -350,7 +347,7 @@ function subSi() {
 
 <body>
     <h1>Customize your robot! </h1>
-    <h3 id ="t3">Choose you default!</h3>
+    <h3 id="t3">Choose you default!</h3>
     <div class="row">
         <div class="container">
             <div class="column">
@@ -409,29 +406,29 @@ function subSi() {
         <img id="box" src="bg2.png">
         <div id="control">
             <p id="pL">Power Level: 0</p>
-            <button id = "p1" onclick="plusPl()"> + </button>
-            <button id = "p2"onclick="subPl()"> - </button>
+            <button id="p1" onclick="plusPl()"> + </button>
+            <button id="p2" onclick="subPl()"> - </button>
             <p id="tS">Top Speed: 0</p>
-            <button id = "t1"onclick="plustS()"> + </button>
-            <button id = "t2"onclick="subtS()"> - </button>
+            <button id="t1" onclick="plustS()"> + </button>
+            <button id="t2" onclick="subtS()"> - </button>
             <p id="sI">Structural Integrity: 0</p>
-            <button id = "s1"onclick="plusSi()"> + </button>
-            <button id = "s2"onclick="subSi()"> - </button>
+            <button id="s1" onclick="plusSi()"> + </button>
+            <button id="s2" onclick="subSi()"> - </button>
             <p id="s">Scanners: OFF</p>
             <input type="button" id="myBtn" value="OFF" onclick="tgl();">
             <p id="d">Defense Systems: OFF</p>
             <input type="button" id="b" value="OFF" onclick="tgl2();">
             <p id="pT">Power Type: No Power Installed </p>
-            <button id = "h"onclick="addH()"> Hydro </button>
-            <button id = "n"onclick="addN()"> Nuclear </button>
-            <button id= "ss"onclick="addS()"> Solar </button>
+            <button id="h" onclick="addH()"> Hydro </button>
+            <button id="n" onclick="addN()"> Nuclear </button>
+            <button id="ss" onclick="addS()"> Solar </button>
             <div id="f">
-            <button id = "f"onclick="finalize()">FINALIZE</button>
-    </div>
+                <button id="f" onclick="finalize()">FINALIZE</button>
+            </div>
         </div>
     </div>
 
-    
+
 
 
 
